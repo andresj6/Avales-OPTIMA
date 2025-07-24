@@ -1,0 +1,443 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'NumAval'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'NumAval'
+annotate view ZC_AVALES_ARNAU with
+{
+  @EndUserText.label: 'Nº Aval'
+  @UI.facet: [ {
+    label: 'Nº Aval', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'Nº Aval'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'Nº Aval'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  NumAval;
+  
+  @EndUserText.label: 'Nº Banco'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Nº Banco'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Nº Banco'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  NumBanco;
+  
+  @EndUserText.label: 'Fecha'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Fecha'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Fecha'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Fecha;
+  
+  @EndUserText.label: 'Tipo Aval'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Tipo Aval'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Tipo Aval'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  TipoAval;
+  
+  @EndUserText.label: 'Importe Aval'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Importe Aval'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Importe Aval'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  ImporteAval;
+  
+  @EndUserText.label: 'Vencimiento'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Vencimiento'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Vencimiento'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Vencimiento;
+  
+  @EndUserText.label: 'Saldo'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Saldo'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'Saldo'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Saldo;
+  
+  @EndUserText.label: 'Fecha Devolución'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'Fecha Devolución'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'Fecha Devolución'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  FechaDevolucion;
+  
+  @EndUserText.label: 'Cancelado'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'Cancelado'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'Cancelado'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  Cancelado;
+  
+  @EndUserText.label: 'Descripción'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'Descripción'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'Descripción'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  Descripcion;
+  
+  @EndUserText.label: 'Delegación'
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'Delegación'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'Delegación'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  Delegacion;
+  
+  @EndUserText.label: 'Comisión Formalización'
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'Comisión Formalización'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'Comisión Formalización'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  ComisionFormalizacion;
+  
+  @EndUserText.label: 'Comisión Mantenimiento'
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'Comisión Mantenimiento'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 , 
+    label: 'Comisión Mantenimiento'
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  ComisionMantenimiento;
+  
+  @EndUserText.label: 'Otros Avales'
+  @UI.identification: [ {
+    position: 140 , 
+    label: 'Otros Avales'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 , 
+    label: 'Otros Avales'
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  OtrosAvales;
+  
+  @EndUserText.label: 'Importe Aval - Div.Ad.'
+  @UI.identification: [ {
+    position: 150 , 
+    label: 'Importe Aval - Div.Ad.'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 , 
+    label: 'Importe Aval - Div.Ad.'
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  ImporteAvalDivad;
+  
+  @EndUserText.label: 'Nº Proyecto'
+  @UI.identification: [ {
+    position: 160 , 
+    label: 'Nº Proyecto'
+  } ]
+  @UI.lineItem: [ {
+    position: 160 , 
+    label: 'Nº Proyecto'
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  NumProyecto;
+  
+  @EndUserText.label: 'Cód. Cliente Principal'
+  @UI.identification: [ {
+    position: 170 , 
+    label: 'Cód. Cliente Principal'
+  } ]
+  @UI.lineItem: [ {
+    position: 170 , 
+    label: 'Cód. Cliente Principal'
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  CodClientePrincipal;
+  
+  @EndUserText.label: 'Cod. Agrupación'
+  @UI.identification: [ {
+    position: 180 , 
+    label: 'Cod. Agrupación'
+  } ]
+  @UI.lineItem: [ {
+    position: 180 , 
+    label: 'Cod. Agrupación'
+  } ]
+  @UI.selectionField: [ {
+    position: 180 
+  } ]
+  CodAgrupacion;
+  
+  @EndUserText.label: 'Firma Digital'
+  @UI.identification: [ {
+    position: 190 , 
+    label: 'Firma Digital'
+  } ]
+  @UI.lineItem: [ {
+    position: 190 , 
+    label: 'Firma Digital'
+  } ]
+  @UI.selectionField: [ {
+    position: 190 
+  } ]
+  FirmaDigital;
+  
+  @EndUserText.label: 'Prórroga'
+  @UI.identification: [ {
+    position: 200 , 
+    label: 'Prórroga'
+  } ]
+  @UI.lineItem: [ {
+    position: 200 , 
+    label: 'Prórroga'
+  } ]
+  @UI.selectionField: [ {
+    position: 200 
+  } ]
+  Prorroga;
+  
+  @EndUserText.label: 'Nº de Prórrogas'
+  @UI.identification: [ {
+    position: 210 , 
+    label: 'Nº de Prórrogas'
+  } ]
+  @UI.lineItem: [ {
+    position: 210 , 
+    label: 'Nº de Prórrogas'
+  } ]
+  @UI.selectionField: [ {
+    position: 210 
+  } ]
+  NumProrrogas;
+  
+  @EndUserText.label: 'Duración Inicial Contrato'
+  @UI.identification: [ {
+    position: 220 , 
+    label: 'Duración Inicial Contrato'
+  } ]
+  @UI.lineItem: [ {
+    position: 220 , 
+    label: 'Duración Inicial Contrato'
+  } ]
+  @UI.selectionField: [ {
+    position: 220 
+  } ]
+  DuracionInicialContrato;
+  
+  @EndUserText.label: 'Compañía'
+  @UI.identification: [ {
+    position: 230 , 
+    label: 'Compañía'
+  } ]
+  @UI.lineItem: [ {
+    position: 230 , 
+    label: 'Compañía'
+  } ]
+  @UI.selectionField: [ {
+    position: 230 
+  } ]
+  Compania;
+  
+  @EndUserText.label: 'Cód. Aval'
+  @UI.identification: [ {
+    position: 240 , 
+    label: 'Cód. Aval'
+  } ]
+  @UI.lineItem: [ {
+    position: 240 , 
+    label: 'Cód. Aval'
+  } ]
+  @UI.selectionField: [ {
+    position: 240 
+  } ]
+  CodAval;
+  
+  @EndUserText.label: 'Fecha Estimada Dev'
+  @UI.identification: [ {
+    position: 250 , 
+    label: 'Fecha Estimada Dev'
+  } ]
+  @UI.lineItem: [ {
+    position: 250 , 
+    label: 'Fecha Estimada Dev'
+  } ]
+  @UI.selectionField: [ {
+    position: 250 
+  } ]
+  FechaEstimadaDev;
+  
+  @EndUserText.label: 'Periodicidad Comisión'
+  @UI.identification: [ {
+    position: 260 , 
+    label: 'Periodicidad Comisión'
+  } ]
+  @UI.lineItem: [ {
+    position: 260 , 
+    label: 'Periodicidad Comisión'
+  } ]
+  @UI.selectionField: [ {
+    position: 260 
+  } ]
+  PeriodicidadComision;
+  
+  @UI.identification: [ { position: 100 } ]
+  @UI.lineItem: [ { position: 100 } ]
+  Attachment;
+
+  @UI.hidden: true
+  MimeType;
+
+  @UI.hidden: true
+  Filename;
+  
+  @UI.identification: [ {
+    position: 270 
+  } ]
+  @UI.lineItem: [ {
+    position: 270 
+  } ]
+  @UI.selectionField: [ {
+    position: 270 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 280 
+  } ]
+  @UI.lineItem: [ {
+    position: 280 
+  } ]
+  @UI.selectionField: [ {
+    position: 280 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 290 
+  } ]
+  @UI.lineItem: [ {
+    position: 290 
+  } ]
+  @UI.selectionField: [ {
+    position: 290 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 300 
+  } ]
+  @UI.lineItem: [ {
+    position: 300 
+  } ]
+  @UI.selectionField: [ {
+    position: 300 
+  } ]
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 310 
+  } ]
+  @UI.lineItem: [ {
+    position: 310 
+  } ]
+  @UI.selectionField: [ {
+    position: 310 
+  } ]
+  LastChangedAt;
+}

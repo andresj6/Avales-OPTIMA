@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Definición de servicio para ZC_AVALES_CARGA'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_AVALES_CARGA'
+  }
+}
+define service ZUI_AVALES_CARGA_O4 provider contracts odata_v4_ui {
+  expose ZC_AVALES_CARGA;
+}

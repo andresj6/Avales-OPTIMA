@@ -1,0 +1,77 @@
+managed implementation in class ZBP_R_AVALES_ARNAU unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_AVALES_ARNAU alias ZrAvalesArnau
+persistent table ZAAVALES_ARNAU
+draft table ZAAVALES_ARNAU_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+
+{
+  field ( mandatory : create )
+   NumAval,
+   Compania,
+   NumBanco;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( readonly : update )
+   NumAval,
+   Compania,
+   NumBanco;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZAAVALES_ARNAU
+  {
+    NumAval = num_aval;
+    NumBanco = num_banco;
+    Fecha = fecha;
+    TipoAval = tipo_aval;
+    ImporteAval = importe_aval;
+    Vencimiento = vencimiento;
+    Saldo = saldo;
+    FechaDevolucion = fecha_devolucion;
+    Cancelado = cancelado;
+    Descripcion = descripcion;
+    Delegacion = delegacion;
+    ComisionFormalizacion = comision_formalizacion;
+    ComisionMantenimiento = comision_mantenimiento;
+    OtrosAvales = otros_avales;
+    ImporteAvalDivad = importe_aval_divad;
+    NumProyecto = num_proyecto;
+    CodClientePrincipal = cod_cliente_principal;
+    CodAgrupacion = cod_agrupacion;
+    FirmaDigital = firma_digital;
+    Prorroga = prorroga;
+    NumProrrogas = num_prorrogas;
+    DuracionInicialContrato = duracion_inicial_contrato;
+    Compania = compania;
+    CodAval = cod_aval;
+    FechaEstimadaDev = fecha_estimada_dev;
+    PeriodicidadComision = periodicidad_comision;
+    Attachment         = attachment;
+    MimeType           = mime_type;
+    FileName           = file_name;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+}

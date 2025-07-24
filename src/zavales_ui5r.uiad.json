@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Avales",
+    "originalLanguage": "es",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zavales.zavales"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_49EE01C7CC05020841FA312F3B75462769FAF3C1_TM",
+    "semanticObject": "zavales",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_49EE01C7CC05020841FA312F3B75462769FAF3C1_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Avales"
+      }
+    }
+  ]
+}
